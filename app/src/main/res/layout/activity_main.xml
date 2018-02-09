@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.rasulury.dev.project4.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffcccc"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvOneGuess"
+            style="@style/Guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvOneStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOneGuess"
+            android:text="Status"
+            android:textStyle="italic" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvOneStatus"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tvOneLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ccd9ff"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tvTwoGuess"
+            style="@style/Guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTwoStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTwoGuess"
+            android:text="Status"
+            android:textStyle="italic" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvTwoStatus"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tvTwoLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>
